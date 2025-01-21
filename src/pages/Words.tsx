@@ -24,18 +24,18 @@ export const Words = () => {
 
     const goNext = () => {
         setCounter(v => v >= words.length - 1 ? 0 : v + 1);
-    }
-
-    const goPrev = () => {
-        setCounter(v => v === 0 ? words.length - 1 : v - 1);
-    }
-
-    const setupWord = () => {
         setValue('');
         setError(false);
         setSuccess(false);
         setShowAnswer(false);
-        goNext();
+    }
+
+    const goPrev = () => {
+        setCounter(v => v === 0 ? words.length - 1 : v - 1);
+        setValue('');
+        setError(false);
+        setSuccess(false);
+        setShowAnswer(false);
     }
 
     const checkWord = () => {
@@ -74,7 +74,7 @@ export const Words = () => {
             setWords([...wordsDictionary[category as keyof CategorizedWords]]);
         }
         setCounter(0);
-    }, [category, markedWords]);
+    }, [category]);
 
     const selectedWord = words[counter];
 
@@ -124,7 +124,7 @@ export const Words = () => {
 
             {success && <div className="centered"><ConfettiExplosion /></div>}
 
-            <button className={success ? 'check' : undefined} onClick={success ? setupWord : checkWord}>
+            <button className={success ? 'check' : undefined} onClick={success ? goNext : checkWord}>
                 {success ? 'Dalej' : 'Sprawdź'}
             </button>
             <Link to="/">« Powrót</Link>

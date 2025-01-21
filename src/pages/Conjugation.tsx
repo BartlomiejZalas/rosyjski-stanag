@@ -28,8 +28,8 @@ export const Conjugation = () => {
         setShowAnswer(false);
     }
 
-    const checkRow = (index: number) => {
-        if (equal(value[index], selectedWord.ru[index])) {
+    const checkRow = (index: number, value: string) => {
+        if (equal(value, selectedWord.ru[index])) {
             setErrors(e => e.map((s, i) => i === index ? false : s));
             setSuccess(e => e.map((s, i) => i === index ? true : s));
         } else {
@@ -38,11 +38,12 @@ export const Conjugation = () => {
         }
     }
 
-    const check = () => arrayOf6.forEach(i => checkRow(i));
+    const check = () => arrayOf6.forEach(i => checkRow(i, value[i]));
 
     const handleOnChange = (index: number, value: string) => {
         setValue(values => values.map((v, i) => i === index ? value : v));
         setErrors(values => values.map((v, i) => i === index ? false : v));
+        checkRow(index, value);
     }
 
     useEffect(() => setConjugations([...shuffle(conjugationsDictionary)]), []);
@@ -63,7 +64,7 @@ export const Conjugation = () => {
                     value={value[i]}
                     onChange={(v) => handleOnChange(i, v)}
                     error={errors[i]}
-                    success={success[i]}/>
+                    success={success[i]} />
             ))}
             {allOk && <div className="centered"><ConfettiExplosion /></div>}
             <button className={allOk ? 'check' : undefined} onClick={allOk ? setupWord : check}>
