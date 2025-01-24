@@ -1,6 +1,8 @@
 export enum Lesson {
     LEKCJA_1 = 'LEKCJA_1',
     STANAG_1 = 'STANAG_1',
+    POWTORKA_1 = 'POWTORKA_1',
+    POWTORKA_2 = 'POWTORKA_2',
     MARKED = 'MARKED',
 }
 

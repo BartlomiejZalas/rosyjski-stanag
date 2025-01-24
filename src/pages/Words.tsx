@@ -21,6 +21,7 @@ export const Words = () => {
     const [value, setValue] = useState('');
     const [showAnswer, setShowAnswer] = useState(false);
     const [markedWords, setMarkedWords] = useState(storedMarkedWords);
+    const [keyboardMapping, setKeyboardMapping] = useState(false);
 
     const goNext = () => {
         setCounter(v => v >= words.length - 1 ? 0 : v + 1);
@@ -116,11 +117,17 @@ export const Words = () => {
                 error={error}
                 success={success}
                 value={value}
+                keyboardMapping={keyboardMapping}
                 onChange={v => {
                     setValue(v);
                     setError(false);
                 }}
             />
+
+            <div style={{ display: 'flex', alignItems: 'center', textAlign: 'left', marginBottom: 4, justifySelf: 'anchor-center' }}>
+                <input id="keyChbx" type="checkbox" checked={keyboardMapping} onChange={() => setKeyboardMapping(v => !v)} />
+                <label style={{ flexGrow: 1 }} htmlFor="keyChbx">Mapuj na rosyjski</label>
+            </div>
 
             {success && <div className="centered"><ConfettiExplosion /></div>}
 

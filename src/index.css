@@ -82,6 +82,11 @@ input {
   z-index: 9999;
 }
 
+input[type=checkbox] {
+  width: 24px;
+  margin: 0;
+}
+
 input.error {
   background: #ead0d0;
   border: 1px solid #FF0000;
