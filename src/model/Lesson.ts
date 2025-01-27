@@ -3,6 +3,8 @@ export enum Lesson {
     STANAG_1 = 'STANAG_1',
     POWTORKA_1 = 'POWTORKA_1',
     POWTORKA_2 = 'POWTORKA_2',
+    LEKCJA_2 = 'LEKCJA_2',
+    LICZEBINIKI = 'LICZEBINIKI',
     MARKED = 'MARKED',
 }
 
