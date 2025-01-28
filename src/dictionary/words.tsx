@@ -166,7 +166,7 @@ export const words: CategorizedWords = {
         { pl: 'w stopniu profesjonalnym', ru: 'Профессионально' },
         { pl: 'nauczycielka', ru: 'Учительница' },
         { pl: 'nauczyciel', ru: 'Учитель' },
-        { pl: 'bardzo dobrze', ru: 'очень хорошо' },
+        { pl: 'bardzo dobrze', ru: 'очень xорошо' },
         { pl: 'w językach obcych', ru: 'на иностранных языках' },
         { pl: 'codziennie', ru: 'каждый день' },
         { pl: 'jedyny', ru: 'единственный' },
