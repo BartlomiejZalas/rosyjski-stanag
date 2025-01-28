@@ -124,17 +124,17 @@ export const Words = () => {
                 }}
             />
 
-            <div style={{ display: 'flex', alignItems: 'center', textAlign: 'left', marginBottom: 4, justifySelf: 'anchor-center' }}>
-                <input id="keyChbx" type="checkbox" checked={keyboardMapping} onChange={() => setKeyboardMapping(v => !v)} />
-                <label style={{ flexGrow: 1 }} htmlFor="keyChbx">Mapuj na rosyjski</label>
-            </div>
-
             {success && <div className="centered"><ConfettiExplosion /></div>}
 
             <button className={success ? 'check' : undefined} onClick={success ? goNext : checkWord}>
                 {success ? 'Dalej' : 'Sprawdź'}
             </button>
             <Link to="/">« Powrót</Link>
+
+            <div style={{ display: 'flex', alignItems: 'center', textAlign: 'left', marginBottom: 4, justifySelf: 'anchor-center' }}>
+                <input id="keyChbx" type="checkbox" checked={keyboardMapping} onChange={() => setKeyboardMapping(v => !v)} />
+                <label style={{ flexGrow: 1 }} htmlFor="keyChbx">Mapuj na rosyjski</label>
+            </div>
 
         </div>
     )
