@@ -13,7 +13,10 @@ export const Home = () => {
                 <button onClick={() => navigate('/slowka')}>Słówka</button>
             </div>
             <div>
-                <button onClick={() => navigate('/odmiana')}>Odmiana</button>
+                <button onClick={() => navigate('/odmiana')}>Odmiana czasownik</button>
+            </div>
+            <div>
+                <button onClick={() => navigate('/odmiana-rzeczownik')}>Odmiana rzeczownik</button>
             </div>
         </>
     )

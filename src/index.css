@@ -62,9 +62,11 @@ button.check {
   background: #16ad16;
   color: #FFF;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -90,7 +92,7 @@ input[type=checkbox] {
 input.error {
   background: #ead0d0;
   border: 1px solid #FF0000;
-  color:  #FF0000;
+  color: #FF0000;
   font-weight: bold;
 }
 
@@ -110,4 +112,11 @@ input.success {
 select {
   font-size: 1em;
   padding: 0.2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
 }
