@@ -6,6 +6,7 @@ import { Input } from '../ui/Input';
 import ConfettiExplosion from 'react-confetti-explosion';
 import { ALL_LESSONS, allLessons, regularLessons, Lesson } from '../model/Lesson';
 import { CategorizedWords, Word } from '../model/Word';
+import { KeyboardMapping, useKeyboardMapping } from '../ui/KeyboardMapping';
 
 const MARKED_WORDS_KEY = 'markedWords';
 
@@ -21,7 +22,7 @@ export const Words = () => {
     const [value, setValue] = useState('');
     const [showAnswer, setShowAnswer] = useState(false);
     const [markedWords, setMarkedWords] = useState(storedMarkedWords);
-    const [keyboardMapping, setKeyboardMapping] = useState(false);
+    const { keyboardMapping } = useKeyboardMapping();
 
     const goNext = () => {
         setCounter(v => v >= words.length - 1 ? 0 : v + 1);
@@ -96,6 +97,7 @@ export const Words = () => {
 
     return (
         <div className="content">
+            <KeyboardMapping />
             <h2 style={{ whiteSpace: 'nowrap' }}>
                 <a href="#" onClick={goPrev}>&laquo;</a>{' '}
                 Przetłumacz ({counter + 1}/{words.length}){' '}
@@ -130,12 +132,6 @@ export const Words = () => {
                 {success ? 'Dalej' : 'Sprawdź'}
             </button>
             <Link to="/">« Powrót</Link>
-
-            <div style={{ display: 'flex', alignItems: 'center', textAlign: 'left', marginBottom: 4, justifySelf: 'anchor-center' }}>
-                <input id="keyChbx" type="checkbox" checked={keyboardMapping} onChange={() => setKeyboardMapping(v => !v)} />
-                <label style={{ flexGrow: 1 }} htmlFor="keyChbx">Mapuj na rosyjski</label>
-            </div>
-
         </div>
     )
 }

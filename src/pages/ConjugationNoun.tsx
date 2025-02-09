@@ -4,6 +4,7 @@ import { conjugationsNoun as conjugationsDictionary } from '../dictionary/conjug
 import { equal, shuffle } from '../utils';
 import { Input } from '../ui/Input';
 import ConfettiExplosion from 'react-confetti-explosion';
+import { KeyboardMapping, useKeyboardMapping } from '../ui/KeyboardMapping';
 
 const placeholders = ['кто? что?', 'кого? чего? (нет)', 'кому? чему?', 'кого? что? (вижу)', 'с кем? с чем?', 'о кём? о чём?'];
 const arrayOf12 = Array.from(Array(12).keys());
@@ -17,6 +18,7 @@ export const ConjugationNoun = () => {
     const [success, setSuccess] = useState([false, false, false, false, false, false, false, false, false, false, false, false]);
     const [value, setValue] = useState(['', '', '', '', '', '', '', '', '', '', '', '']);
     const [showAnswer, setShowAnswer] = useState(false);
+    const { keyboardMapping } = useKeyboardMapping();
 
     const selectedWord = conjugations[counter];
     const allOk = success.every(s => s);
@@ -51,7 +53,7 @@ export const ConjugationNoun = () => {
 
     return (
         <div className="content">
-
+            <KeyboardMapping />
             <h2>Odmień ({counter + 1}/{conjugationsDictionary.length}){' '}
                 <span onClick={() => setShowAnswer(v => !v)}>
                     {allOk ? '😍' : showAnswer ? '🙊' : '🙈'}
@@ -72,6 +74,7 @@ export const ConjugationNoun = () => {
                                 value={value[i]}
                                 onChange={(v) => handleOnChange(i, v)}
                                 error={errors[i]}
+                                keyboardMapping={keyboardMapping}
                                 success={success[i]} />
                         </div>
                         <div>
@@ -80,6 +83,7 @@ export const ConjugationNoun = () => {
                                 value={value[i + 6]}
                                 onChange={(v) => handleOnChange(i + 6, v)}
                                 error={errors[i + 6]}
+                                keyboardMapping={keyboardMapping}
                                 success={success[i + 6]} />
                         </div>
                     </>

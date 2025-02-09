@@ -4,6 +4,7 @@ import { conjugations as conjugationsDictionary } from '../dictionary/conjugatio
 import { equal, shuffle } from '../utils';
 import { Input } from '../ui/Input';
 import ConfettiExplosion from 'react-confetti-explosion';
+import { KeyboardMapping, useKeyboardMapping } from '../ui/KeyboardMapping';
 
 const placeholders = ['я', 'ты', 'он', 'мы', 'вы', 'они'];
 const arrayOf6 = Array.from(Array(6).keys());
@@ -16,6 +17,7 @@ export const Conjugation = () => {
     const [success, setSuccess] = useState([false, false, false, false, false, false]);
     const [value, setValue] = useState(['', '', '', '', '', '']);
     const [showAnswer, setShowAnswer] = useState(false);
+    const { keyboardMapping } = useKeyboardMapping();
 
     const selectedWord = conjugations[counter];
     const allOk = success.every(s => s);
@@ -50,7 +52,7 @@ export const Conjugation = () => {
 
     return (
         <div className="content">
-
+            <KeyboardMapping />
             <h2>Odmień ({counter + 1}/{conjugationsDictionary.length}){' '}
                 <span onClick={() => setShowAnswer(v => !v)}>
                     {allOk ? '😍' : showAnswer ? '🙊' : '🙈'}
@@ -64,6 +66,7 @@ export const Conjugation = () => {
                     value={value[i]}
                     onChange={(v) => handleOnChange(i, v)}
                     error={errors[i]}
+                    keyboardMapping={keyboardMapping}
                     success={success[i]} />
             ))}
             {allOk && <div className="centered"><ConfettiExplosion /></div>}
