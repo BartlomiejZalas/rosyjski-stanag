@@ -6,7 +6,7 @@ import { Input } from '../ui/Input';
 import ConfettiExplosion from 'react-confetti-explosion';
 import { KeyboardMapping, useKeyboardMapping } from '../ui/KeyboardMapping';
 
-const placeholders = ['кто? что?', 'кого? чего? (нет)', 'кому? чему?', 'кого? что? (вижу)', 'с кем? с чем?', 'о кём? о чём?'];
+const placeholders = ['кто? что? (есть)', 'кого? чего? (нет)', 'кому? чему? (помогать)', 'кого? что? (вижу)', 'с кем? с чем? (говорить)', 'о кём? о чём? (думать)'];
 const arrayOf12 = Array.from(Array(12).keys());
 const arrayOf6 = Array.from(Array(6).keys());
 
