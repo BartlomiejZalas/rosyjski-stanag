@@ -7,6 +7,7 @@ export enum Lesson {
     LICZEBINIKI = 'LICZEBINIKI',
     LEKCJA_3 = 'LEKCJA_3',
     STANAG_2 = 'STANAG_2',
+    TOP_100_CZASOWNIKI = 'TOP_100_CZASOWNIKI',
     MARKED = 'MARKED',
 }
 
