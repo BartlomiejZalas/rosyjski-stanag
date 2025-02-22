@@ -1,3 +1,6 @@
+import { useRef } from "react";
+import { flushSync } from "react-dom";
+
 interface Props {
     placeholder: string;
     value: string;
@@ -78,7 +81,11 @@ const replacementMap: Record<string, string> = {
 
 export const Input = ({ value, onChange, error, success, placeholder, keyboardMapping = false }: Props) => {
 
-    const handleOnChange = (newValue: string) => {
+    const position = useRef({ beforeStart: 0, beforeEnd: 0 });
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newValue = e.target.value;
         if (!keyboardMapping) {
             onChange(newValue);
             return;
@@ -92,15 +99,28 @@ export const Input = ({ value, onChange, error, success, placeholder, keyboardMa
                 translated += ch;
             }
         }
-        console.log('osadzam:', translated)
-        onChange(translated);
+
+        const beforeStart = e.target.selectionStart || 0;
+        const beforeEnd = e.target.selectionEnd || 0;
+
+        position.current = {
+            beforeStart,
+            beforeEnd
+        };
+
+        flushSync(() => onChange(translated));
+
+        if (inputRef.current) {
+            inputRef.current.setSelectionRange(beforeStart, beforeEnd);
+        }
     };
 
     return (
         <input type="text" placeholder={placeholder} disabled={success}
             className={error ? 'error' : success ? 'success' : undefined}
             value={value}
-            onChange={e => handleOnChange(e.target.value)} />
+            ref={inputRef}
+            onChange={e => handleOnChange(e)} />
     )
 
 }
