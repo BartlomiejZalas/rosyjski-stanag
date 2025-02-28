@@ -67,7 +67,7 @@ export const words: CategorizedWords = {
             { pl: 'chcę was poznać', ru: 'Я хочу с вами познакомиться' },
             { pl: 'ja zapoznałam się z bardzo interesującymi ludźmi', ru: 'я познакомилась с очень интересными людьми' },
         ],
-    [Lesson.POWTORKA_1]: [
+    [Lesson.LEKCJA_2]: [
         { pl: 'Cześć', ru: 'Привет' },
         { pl: 'Cześć 2', ru: 'Здравствуй' },
         { pl: 'Dzień dobry [przez cały dzień]', ru: 'Здравствуйте' },
@@ -107,7 +107,7 @@ export const words: CategorizedWords = {
         { pl: 'Jestem zadowolony', ru: 'Я рад' },
         { pl: 'Spójrz!', ru: 'Посмотри' },
     ],
-    [Lesson.POWTORKA_2]: [
+    [Lesson.LEKCJA_3]: [
         { pl: 'Kim jesteś?', ru: 'Кто ты' },
         { pl: 'Kim jesteście?', ru: 'Кто вы' },
         { pl: 'Jestem studentem', ru: 'Я студент' },
@@ -145,7 +145,7 @@ export const words: CategorizedWords = {
         { pl: 'To jest na półce', ru: 'Это на полке' },
         { pl: 'To jest tam', ru: 'Это там' },
     ],
-    [Lesson.LEKCJA_2]: [
+    [Lesson.LEKCJA_4]: [
         { pl: 'symulator dronów', ru: 'симулятор дронов' },
         { pl: 'artykuł', ru: 'статья' },
         { pl: 'artykułów', ru: 'статьи' },
@@ -213,7 +213,7 @@ export const words: CategorizedWords = {
         { pl: 'milion', ru: 'миллион' },
         { pl: 'miliard', ru: 'миллиард' },
     ],
-    [Lesson.LEKCJA_3]: [
+    [Lesson.LEKCJA_5]: [
         { pl: 'nieoficjalnie', ru: 'Неофициально' },
         { pl: 'Program', ru: 'Программа' },
         { pl: 'Ja trenowałem fizycznie', ru: 'Я физически тренировался' },
@@ -376,7 +376,7 @@ export const words: CategorizedWords = {
         { pl: "wyjeżdжać", ru: "уезжать" },
         { pl: "wchodzić", ru: "входить" }
     ],
-    [Lesson.LEKCJA_4]: [
+    [Lesson.LEKCJA_6]: [
         { pl: 'choroba', ru: 'болезнь' },
         { pl: 'szpital', ru: 'больница' },
         { pl: 'w szpitalu', ru: 'в больнице' },
@@ -412,6 +412,13 @@ export const words: CategorizedWords = {
         { pl: 'społeczeństwo', ru: 'общество' },
         { pl: 'w trzech językach obcych', ru: 'на трёх иностранных языках' },
         { pl: 'głupcy', ru: 'дураки' }
+    ],
+    [Lesson.LEKCJA_7]: [
+        { pl: 'aplikacja', ru: 'Приложение' },
+        { pl: 'skończyć wojnę', ru: 'закончить войну' },
+        { pl: 'ciężki', ru: 'тяжёлый' },
+        { pl: 'natura', ru: 'природа' },
+        { pl: 'artysta', ru: 'Художник' },
     ],
     [Lesson.MARKED]: [],
 }
