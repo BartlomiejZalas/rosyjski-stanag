@@ -920,5 +920,28 @@ export const words: CategorizedWords = {
         { "ru": "Недаром", "pl": "nie bez powodu" },
         { "ru": "современная музыка", "pl": "współczesna muzyka" }
     ],
+    [Lesson.LEKCJA_11]: [
+        { "ru": "на военном полигоне", "pl": "na wojskowym poligonie" },
+        { "ru": "на улице", "pl": "na dworze" },
+        { "ru": "мир политики", "pl": "świat polityki" },
+        { "ru": "Мне не нравятся польские политики", "pl": "mi nie podobają się polscy politycy" },
+        { "ru": "Германия", "pl": "Niemcy (kraj)" },
+        { "ru": "Немецкий язык", "pl": "niemiecki język" },
+        { "ru": "Я вижу старого немца", "pl": "ja widzę starego niemca" },
+        { "ru": "Брюссель", "pl": "Bruksela" },
+        { "ru": "она работала ассистенткой", "pl": "ona pracowała jako asystentka" },
+        { "ru": "она хотела вернуться", "pl": "ona chciała „wrócić się”" },
+        { "ru": "2 раза в неделю", "pl": "2 razy w tygodniu" },
+        { "ru": "он встречается со многими женщинами", "pl": "on spotyka się z wieloma kobietami" },
+        { "ru": "Она встречается со многими мужчинами", "pl": "ona spotyka się z wieloma mężczyznami" },
+        { "ru": "Это не моё дело", "pl": "to nie moja sprawa" },
+        { "ru": "приключение", "pl": "przygoda" },
+        { "ru": "Властелин колец", "pl": "Władca Pierścieni" },
+        { "ru": "Братство кольца", "pl": "Drużyna Pierścienia" },
+        { "ru": "Скачать", "pl": "pobrać" },
+        { "ru": "Вертолёт", "pl": "helikopter" },
+        { "ru": "только два месяца", "pl": "tylko dwa miesiące" },
+        { "ru": "командир", "pl": "dowódca" }
+    ],
     [Lesson.MARKED]: [],
 }
