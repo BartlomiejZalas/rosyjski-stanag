@@ -943,5 +943,26 @@ export const words: CategorizedWords = {
         { "ru": "только два месяца", "pl": "tylko dwa miesiące" },
         { "ru": "командир", "pl": "dowódca" }
     ],
+    [Lesson.LEKCJA_12]: [
+        { "ru": "разведывательные дроны", "pl": "drony rozpoznawcze" },
+        { "ru": "беспилотники для наблюдения", "pl": "drony obserwacyjne" },
+        { "ru": "вечеринка", "pl": "impreza" },
+        { "ru": "Я мою", "pl": "ja myję" },
+        { "ru": "Я хожу утром и вечером", "pl": "ja chodzę rano i wieczorem" },
+        { "ru": "Дворец культуры", "pl": "Pałac Kultury" },
+        { "ru": "богатый мужчина", "pl": "bogaty mężczyzna" },
+        { "ru": "большинство", "pl": "większość" },
+        { "ru": "искусственный", "pl": "sztuczny" },
+        { "ru": "искусственная", "pl": "sztuczna" },
+        { "ru": "искусственный интеллект", "pl": "AI" },
+        { "ru": "настоящая глупость", "pl": "prawdziwa głupota" },
+        { "ru": "объединить", "pl": "zjednoczyć" },
+        { "ru": "создать", "pl": "założyć (np. firmę), wynaleźć (np. jakieś urządzenie)" },
+        { "ru": "много украинцев", "pl": "dużo Ukraińców" },
+        { "ru": "развивать свою карьеру", "pl": "rozwijać swoją karierę" },
+        { "ru": "функционировать", "pl": "funkcjonować" },
+        { "ru": "тяжёлый", "pl": "ciężki" },
+        { "ru": "ценности", "pl": "wartości" }
+    ],
     [Lesson.MARKED]: [],
 }
