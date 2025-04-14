@@ -51,6 +51,22 @@ export const ConjugationNoun = () => {
 
     useEffect(() => setConjugations([...shuffle(conjugationsDictionary)]), []);
 
+    const goNext = () => {
+        setCounter(v => v >= conjugations.length - 1 ? 0 : v + 1);
+        setValue(['', '', '', '', '', '', '', '', '', '', '', '']);
+        setErrors([false, false, false, false, false, false, false, false, false, false, false, false]);
+        setSuccess([false, false, false, false, false, false, false, false, false, false, false, false]);
+        setShowAnswer(false);
+    }
+
+    const goPrev = () => {
+        setCounter(v => v === 0 ? conjugations.length - 1 : v - 1);
+        setValue(['', '', '', '', '', '', '', '', '', '', '', '']);
+        setErrors([false, false, false, false, false, false, false, false, false, false, false, false]);
+        setSuccess([false, false, false, false, false, false, false, false, false, false, false, false]);
+        setShowAnswer(false);
+    }
+
     return (
         <div className="content">
             <KeyboardMapping />
@@ -59,7 +75,11 @@ export const ConjugationNoun = () => {
                     {allOk ? '😍' : showAnswer ? '🙊' : '🙈'}
                 </span>
             </h2>
-            <h3>{showAnswer ? selectedWord.ru.join(' ') : selectedWord.base}</h3>
+
+            <h3>
+                <a href="#" onClick={goPrev}>&laquo;</a>
+                {showAnswer ? selectedWord.ru.join(' ') : selectedWord.base}
+                <a href="#" onClick={goNext}>&raquo;</a></h3>
 
             <div className="grid">
                 <div></div>
