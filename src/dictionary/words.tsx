@@ -961,5 +961,19 @@ export const words: CategorizedWords = {
         { ru: "тяжёлый", pl: "ciężki" },
         { ru: "ценности", pl: "wartości" }
     ],
+    [Lesson.LEKCJA_13]: [
+        { "ru": "Праздники", "pl": "święta" },
+        { "ru": "одни и те же вещи", "pl": "te same rzeczy" },
+        { "ru": "в этом месяце", "pl": "W TYM miesiącu" },
+        { "ru": "голодный", "pl": "głodny" },
+        { "ru": "не голодный", "pl": "nie głodny" },
+        { "ru": "кофе", "pl": "kawa" },
+        { "ru": "моя любимая", "pl": "moja ulubiona" },
+        { "ru": "перед сном", "pl": "przed snem" },
+        { "ru": "сон", "pl": "sen" },
+        { "ru": "боевые штаны", "pl": "spodnie bojowe" },
+        { "ru": "платье", "pl": "sukienka" },
+        { "ru": "много платьев", "pl": "wiele sukienek" }
+    ],
     [Lesson.MARKED]: [],
 }
