@@ -988,7 +988,7 @@ export const words: CategorizedWords = {
         {ru: "мой телефон сломался", pl: "mój telefon zepsuł się"},
         {ru: "остановка", pl: "przystanek"},
         {ru: "в будущем году ", pl: "w przyszłym roku"},
-        {ru: "w przyszły tydzień ", pl: "на следующей неделе"},
+        {ru: "на следующей неделе", pl: "w przyszły tydzień"},
         {ru: "отель", pl: "hotel"},
         {ru: "план изменился", pl: "plan zmienił się"},
         {ru: "занятия по стрельбе", pl: "zajęcia ze strzelania"},
