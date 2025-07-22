@@ -20,6 +20,7 @@ export enum Lesson {
     LEKCJA_15 = 'LEKCJA_15',
     LEKCJA_16 = 'LEKCJA_16',
     LEKCJA_17 = 'LEKCJA_17',
+    LEKCJA_18 = 'LEKCJA_18',
     TOP_1000_1 = 'TOP_1000_1',
     TOP_1000_2 = 'TOP_1000_2',
     STANAG_PISANIE = 'STANAG_PISANIE',
