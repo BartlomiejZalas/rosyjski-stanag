@@ -1172,7 +1172,7 @@ export const words: CategorizedWords = {
             { ru: "ездить в командировки", pl: "jeździć w podróże biznesowe" },
             { ru: "потеря времени", pl: "strata czasu" },
             { ru: "экскурсии", pl: "wycieczki" },
-            { ru: "экскурсия", pl: "chodzić" },
+            { ru: "экскурсия", pl: "wycieczka" },
             { ru: "несколько недель", pl: "kilka tygodni" },
             { ru: "экзотические страны", pl: "państwa egzotyczne" },
             { ru: "в прошлом году", pl: "w zeszłym roku" },
