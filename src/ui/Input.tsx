@@ -1,3 +1,4 @@
+import React from "react";
 import { useRef } from "react";
 import { flushSync } from "react-dom";
 
@@ -7,6 +8,7 @@ interface Props {
     onChange: (v: string) => void;
     error: boolean;
     success: boolean;
+    ref?: React.MutableRefObject<HTMLInputElement>;
     keyboardMapping?: boolean;
 }
 
@@ -79,10 +81,9 @@ const replacementMap: Record<string, string> = {
     'я': 'я'
 };
 
-export const Input = ({ value, onChange, error, success, placeholder, keyboardMapping = false }: Props) => {
+export const Input = React.forwardRef<HTMLInputElement, Props>(({ value, onChange, error, success, placeholder, keyboardMapping = false }, ref) => {
 
     const position = useRef({ beforeStart: 0, beforeEnd: 0 });
-    const inputRef = useRef<HTMLInputElement>(null);
 
     const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const newValue = e.target.value;
@@ -110,8 +111,8 @@ export const Input = ({ value, onChange, error, success, placeholder, keyboardMa
 
         flushSync(() => onChange(translated));
 
-        if (inputRef.current) {
-            inputRef.current.setSelectionRange(beforeStart, beforeEnd);
+        if (ref && 'current' in ref && ref.current) {
+            ref.current.setSelectionRange(beforeStart, beforeEnd);
         }
     };
 
@@ -119,8 +120,9 @@ export const Input = ({ value, onChange, error, success, placeholder, keyboardMa
         <input type="text" placeholder={placeholder} disabled={success}
             className={error ? 'error' : success ? 'success' : undefined}
             value={value}
-            ref={inputRef}
+            ref={ref}
+            autoFocus={true}
             onChange={e => handleOnChange(e)} />
     )
 
-}
+});

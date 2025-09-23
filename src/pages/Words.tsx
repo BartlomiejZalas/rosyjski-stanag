@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { words as wordsDictionary } from '../dictionary/words';
 import { equal, humanize } from '../utils';
 import { Input } from '../ui/Input';
@@ -23,6 +23,8 @@ export const Words = () => {
     const [showAnswer, setShowAnswer] = useState(false);
     const [markedWords, setMarkedWords] = useState(storedMarkedWords);
     const { keyboardMapping } = useKeyboardMapping();
+    const buttonRef = useRef<HTMLButtonElement>(null);
+    const inputRef = useRef<HTMLInputElement>(null);
 
     const goNext = () => {
         setCounter(v => v >= words.length - 1 ? 0 : v + 1);
@@ -30,6 +32,7 @@ export const Words = () => {
         setError(false);
         setSuccess(false);
         setShowAnswer(false);
+        setTimeout(() => inputRef.current?.focus(), 100);
     }
 
     const goPrev = () => {
@@ -40,10 +43,11 @@ export const Words = () => {
         setShowAnswer(false);
     }
 
-    const checkWord = () => {
+    const checkWord = (value: string) => {
         if (equal(value, selectedWord.ru)) {
             setSuccess(true);
             setError(false);
+            buttonRef.current?.focus();
         } else {
             setSuccess(false);
             setError(true);
@@ -120,15 +124,17 @@ export const Words = () => {
                 success={success}
                 value={value}
                 keyboardMapping={keyboardMapping}
+                ref={inputRef}
                 onChange={v => {
                     setValue(v);
                     setError(false);
+                    checkWord(v);
                 }}
             />
 
             {success && <div className="centered"><ConfettiExplosion /></div>}
 
-            <button className={success ? 'check' : undefined} onClick={success ? goNext : checkWord}>
+            <button ref={buttonRef} className={success ? 'check' : undefined} onClick={success ? goNext : () => checkWord(value)}>
                 {success ? 'Dalej' : 'Sprawdź'}
             </button>
             <Link to="/">« Powrót</Link>
