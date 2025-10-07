@@ -3420,5 +3420,121 @@ export const words: CategorizedWords = {
             { ru: "Я предлагаю поговорить по телефону.", pl: "Proponuję porozmawiać przez telefon." }
 
         ],
+    [Lesson.SUPER_STANAG_2]: [
+        // Wyjazd na urlop
+        { pl: "Jadę na urlop w góry.", ru: "Я еду в отпуск в горы" },
+        { pl: "Jadę na urlop nad morze.", ru: "Я еду в отпуск на море" },
+        { pl: "Jadę na urlop nad jezioro.", ru: "Я еду в отпуск на озеро" },
+        { pl: "W weekend jadę na wieś.", ru: "На выходных я еду в деревню" },
+        { pl: "W majówkę jadę w....", ru: "На майские выходные я еду в ..." },
+        { pl: "W weekend jadę w góry.", ru: "На выходных я еду в горы" },
+
+        // Poligon
+        { pl: "Mamy dzisiaj ćwiczenia na poligonie", ru: "Сегодня у нас учения на полигоне" },
+        { pl: "Mamy ćwiczenia ze strzelania", ru: "У нас учения по стрельбе" },
+
+        // Święta
+        { pl: "Mam urodziny.", ru: "У меня день рождения" },
+        { pl: "Spędzam Boże Narodzenie z rodziną", ru: "Я провожу Рождество с семьёй" },
+        { pl: "Idziemy na imprezę.", ru: "Мы идём на вечеринку" },
+        { pl: "Byłem na parapetówce u przyjaciela.", ru: "Я был на новоселье у друга" },
+
+        // Choroby
+        { pl: "Zachorowałem.", ru: "Я заболел" },
+        { pl: "My jesteśmy chorzy.", ru: "Мы больны" },
+        { pl: "Jestem na kwarantannie.", ru: "Я на карантине" },
+        { pl: "Mam grypę.", ru: "У меня грипп" },
+        { pl: "Mam gorączkę.", ru: "У меня температура" },
+        { pl: "Mam katar.", ru: "У меня насморк" },
+        { pl: "Kaszel", ru: "кашель" },
+
+        // Zakupy
+        { pl: "Kupuję jedzenie w sklepie.", ru: "Я покупаю еду в магазине" },
+        { pl: "Kupuję napoje.", ru: "Я покупаю напитки" },
+        { pl: "Piję napój.", ru: "Я пью напиток" },
+        { pl: "Zjadłem kolację.", ru: "Я поел ужин" },
+        { pl: "Kupuję chleb i mleko.", ru: "Я покупаю хлеб и молоко." },
+
+        // Kontakt
+        { pl: "Mam spotkanie z przyjacielem.", ru: "У меня встреча с другом." },
+        { pl: "Zadzwonię do ciebie później.", ru: "Я позвоню тебе позже." },
+        { pl: "Zadzwoń do mnie jutro", ru: "позвони мне завтра" },
+
+        // Planowanie
+        { pl: "Mam zajęcia jutro.", ru: "У меня занятия завтра." },
+        { pl: "Zmieniam rozkład zajęć.", ru: "Я меняю расписание." },
+        { pl: "Kurs języka rosyjskiego.", ru: "курс русского языка." },
+
+        // Rzeczy
+        { pl: "Mam plecak.", ru: "У меня есть рюкзак." },
+        { pl: "Używam komputera codziennie.", ru: "Я использую компьютер каждый день." },
+        { pl: "Moja przysięga", ru: "моя присяга." },
+        { pl: "Dostałem prezenty.", ru: "Я получил подарки." },
+        { pl: "Kupuję pamiątki z podróży.", ru: "Я покупаю сувениры из путешествия." },
+        { pl: "Idziemy do kina.", ru: "Мы идём в кино." },
+        { pl: "Jaka jest dzisiaj pogoda?", ru: "Какая сегодня погода?" },
+        { pl: "Opiekuję się dziećmi.", ru: "Я забочусь о детях." },
+        { pl: "On opiekuje się psem.", ru: "Он заботится о собаке." },
+        { pl: "Chcę pojechać w różne kraje.", ru: "Я хочу поехать в разные страны." },
+        { pl: "Uprawiam sporty.", ru: "Я занимаюсь спортом." },
+        { pl: "Spotykam się z przyjaciółmi.", ru: "Я встречаюсь с друзьями." },
+        { pl: "Planuję wyjazd na przyszły miesiąc.", ru: "Я планирую поездку на следующий месяц." },
+
+        // Opis podróży
+        { pl: "Mój pokój hotelowy jest duży.", ru: "Мой номер большой." },
+        { pl: "Lubię zwiedzać atrakcje.", ru: "Мне нравится осматривать достопримечательности" },
+        { pl: "Tam spacerowaliśmy.", ru: "Мы там гуляли." },
+        { pl: "Czekam na przystanku autobusowym.", ru: "Я жду на остановке." },
+        { pl: "Postój", ru: "остановка." },
+
+        // Opis restauracji
+        { pl: "Jedzenie w tej restauracji jest smaczne.", ru: "Еда в этом ресторане вкусная." },
+        { pl: "Piję sok i kawę.", ru: "Я пью сок и кофе." },
+
+        // Opis imprezy
+        { pl: "Impreza była wesoła.", ru: "Вечеринка была весёлой." },
+
+        // Opis wydarzenia sportowego
+        { pl: "Mecz był ciekawy.", ru: "Матч был интересным." },
+        { pl: "Nasza drużyna wygrała.", ru: "Наша команда выиграла." },
+        { pl: "Niestety przegraliśmy mecz.", ru: "К сожалению, мы проиграли матч." },
+
+        // Opis mieszkania
+        { pl: "Moje mieszkanie jest małe, ale wygodne.", ru: "Моя квартира маленькая, но удобная." },
+
+        // Opis pracy
+        { pl: "Pracuję w wojsku.", ru: "Я работаю в армии." },
+        { pl: "Lubię swoją pracę.", ru: "Мне нравится моя работа." },
+
+        // Dni tygodnia
+        { pl: "w poniedziałek", ru: "в понедельник" },
+        { pl: "we wtorek", ru: "во вторник" },
+        { pl: "w środę", ru: "в среду" },
+        { pl: "w czwartek", ru: "в четверг" },
+        { pl: "w piątek", ru: "в пятницу" },
+        { pl: "w sobotę", ru: "в субботу" },
+        { pl: "w niedzielę", ru: "в воскресенье" },
+        { pl: "w przyszły poniedziałek", ru: "в следующий понедельник" },
+        { pl: "w przyszły wtorek", ru: "в следующий вторник" },
+        { pl: "w przyszłą środę", ru: "в следующую среду" },
+        { pl: "w przyszły czwartek", ru: "в следующий четверг" },
+        { pl: "w przyszły piątek", ru: "в следующую пятницу" },
+        { pl: "w przyszłą sobotę", ru: "в следующую субботу" },
+        { pl: "w przyszłą niedzielę", ru: "в следующее воскресенье" },
+
+        // Miesiące
+        { pl: "w styczniu", ru: "в январе" },
+        { pl: "w lutym", ru: "в феврале" },
+        { pl: "w marcu", ru: "в марте" },
+        { pl: "w kwietniu", ru: "в апреле" },
+        { pl: "w maju", ru: "в мае" },
+        { pl: "w czerwcu", ru: "в июне" },
+        { pl: "w lipcu", ru: "в июле" },
+        { pl: "w sierpniu", ru: "в августе" },
+        { pl: "we wrześniu", ru: "в сентябре" },
+        { pl: "w październiku", ru: "в октябре" },
+        { pl: "w listopadzie", ru: "в ноябре" },
+        { pl: "w grudniu", ru: "в декабре" }
+    ],
     [Lesson.MARKED]: [],
 }
