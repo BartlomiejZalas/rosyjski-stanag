@@ -3431,7 +3431,7 @@ export const words: CategorizedWords = {
 
         // Poligon
         { pl: "Mamy dzisiaj ćwiczenia na poligonie", ru: "Сегодня у нас учения на полигоне" },
-        { pl: "Mamy ćwiczenia ze strzelania", ru: "У нас учения по стрельбе" },
+        { pl: "Mamy zajęcia ze strzelania", ru: "У нас занятия по стрельбе" },
 
         // Święta
         { pl: "Mam urodziny.", ru: "У меня день рождения" },
@@ -3457,7 +3457,7 @@ export const words: CategorizedWords = {
 
         // Kontakt
         { pl: "Mam spotkanie z przyjacielem.", ru: "У меня встреча с другом." },
-        { pl: "Zadzwonię do ciebie później.", ru: "Я позвоню тебе позже." },
+        { pl: "Zadzwonię do ciebie po pracy.", ru: "Я позвоню тебе после работы." },
         { pl: "Zadzwoń do mnie jutro", ru: "позвони мне завтра" },
 
         // Planowanie
