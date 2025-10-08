@@ -3505,6 +3505,7 @@ export const words: CategorizedWords = {
         // Opis pracy
         { pl: "Pracuję w wojsku.", ru: "Я работаю в армии." },
         { pl: "Lubię swoją pracę.", ru: "Мне нравится моя работа." },
+        { pl: "Za tydzień się przeprowadzam.", ru: "Я перееду через неделю." },
 
         // Dni tygodnia
         { pl: "w poniedziałek", ru: "в понедельник" },
