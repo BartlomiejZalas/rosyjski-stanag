@@ -3605,5 +3605,51 @@ export const words: CategorizedWords = {
         { pl: "Chrystus zmartwychwstał!", ru: "Христос воскрес!" },
         { pl: "żłób / żłóbek", ru: "ясли" }
     ],
+    [Lesson.IZ_PIERWYCH_UST_12]: [
+        // Części ciała
+        { pl: "krew", ru: "кровь" },
+        { pl: "noga", ru: "нога" },
+        { pl: "włosy", ru: "волосы" },
+        { pl: "nos", ru: "нос" },
+        { pl: "oko / oczy", ru: "глаз (глаза)" },
+        { pl: "palec", ru: "палец" },
+        { pl: "głowa", ru: "голова" },
+        { pl: "ramię", ru: "плечо" },
+        { pl: "brzuch", ru: "живот" },
+        { pl: "usta", ru: "рот" },
+        { pl: "ciało", ru: "тело" },
+        { pl: "serce", ru: "сердце" },
+        { pl: "nerki", ru: "почки" },
+        { pl: "gardło", ru: "горло" },
+        { pl: "ręka", ru: "рука" },
+        { pl: "plecy", ru: "спина" },
+        { pl: "ucho / uszy", ru: "ухо (уши)" },
+        { pl: "szyja", ru: "шея" },
+        { pl: "ząb", ru: "зуб" },
+        { pl: "nogi", ru: "ноги" },
+        { pl: "mięśnie", ru: "мышцы" },
+
+        // Złe samopoczucie – zdania
+        { pl: "Mam biegunkę.", ru: "У меня понос." },
+        { pl: "Jest mi niedobrze.", ru: "Меня тошнит." },
+        { pl: "Kręci mi się w głowie.", ru: "У меня кружится голова." },
+        { pl: "Mam kaszel.", ru: "У меня кашель." },
+        { pl: "Jestem bardzo senny.", ru: "Я очень сонный." },
+        { pl: "Źle się czuję.", ru: "Я плохо себя чувствую." },
+        { pl: "Mam podwyższoną temperaturę.", ru: "У меня повышенная температура." },
+        { pl: "Mam katar.", ru: "У меня насморк." },
+
+        // Choroby
+        { pl: "angina", ru: "ангина" },
+        { pl: "astma", ru: "астма" },
+        { pl: "ospa wietrzna", ru: "ветряная оспа" },
+        { pl: "zapalenie płuc", ru: "воспаление лёгких" },
+        { pl: "grypa", ru: "грипп" },
+        { pl: "cukrzyca", ru: "диабет" },
+        { pl: "przeziębienie", ru: "простуда" },
+        { pl: "rak (nowotwór)", ru: "рак" },
+        { pl: "AIDS", ru: "СПИД" },
+        { pl: "gruźlica", ru: "туберкулёз" }
+    ],
     [Lesson.MARKED]: [],
 }
