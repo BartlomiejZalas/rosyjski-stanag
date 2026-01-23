@@ -3651,5 +3651,103 @@ export const words: CategorizedWords = {
         { pl: "AIDS", ru: "СПИД" },
         { pl: "gruźlica", ru: "туберкулёз" }
     ],
+    [Lesson.IZ_PIERWYCH_UST_13]: [
+        // Owoce i warzywa
+        { pl: "pomarańcza", ru: "апельсин" },
+        { pl: "ziemniak", ru: "картофель" },
+        { pl: "truskawka", ru: "клубника" },
+        { pl: "winogrona", ru: "виноград" },
+        { pl: "malina", ru: "малина" },
+        { pl: "wiśnia", ru: "вишня" },
+        { pl: "gruszka", ru: "груша" },
+        { pl: "ogórek", ru: "огурец" },
+        { pl: "dynia", ru: "тыква" },
+        { pl: "melon", ru: "дыня" },
+        { pl: "czosnek", ru: "чеснок" },
+        { pl: "cukinia", ru: "кабачок" },
+        { pl: "pomidor", ru: "помидор" },
+        { pl: "jabłko", ru: "яблоко" },
+
+        // Mięso i nabiał
+        { pl: "słonina", ru: "сало" },
+        { pl: "baranina", ru: "баранина" },
+        { pl: "wieprzowina", ru: "свинина" },
+        { pl: "kurczak", ru: "курятина" },
+        { pl: "śmietanka", ru: "сливки" },
+        { pl: "śmietana", ru: "сметана" },
+        { pl: "ser", ru: "сыр" },
+        { pl: "masło", ru: "масло" },
+        { pl: "twaróg", ru: "творог" },
+        { pl: "wołowina", ru: "говядина" },
+        { pl: "mleko", ru: "молоко" },
+        { pl: "cielęcina", ru: "телятина" },
+
+        // Pieczywo i słodycze
+        { pl: "chleb pszenny", ru: "батон" },
+        { pl: "bułka", ru: "булочка" },
+        { pl: "ciasto", ru: "пирог" },
+        { pl: "chleb", ru: "хлеб" },
+        { pl: "jogurt", ru: "йогурт" },
+        { pl: "ciastko", ru: "пирожное" },
+        { pl: "tort", ru: "торт" },
+
+        // Sztućce i naczynia
+        { pl: "łyżka", ru: "ложка" },
+        { pl: "widelec", ru: "вилка" },
+        { pl: "nóż", ru: "нож" },
+        { pl: "serwetka", ru: "салфетка" },
+        { pl: "talerz", ru: "тарелка" },
+        { pl: "filiżanka", ru: "чашка" },
+        { pl: "kubek", ru: "кружка" },
+        { pl: "spodek", ru: "блюдце" },
+        { pl: "cukiernica", ru: "сахарница" },
+
+        // Czasowniki kuchenne
+        { pl: "dodać", ru: "добавить" },
+        { pl: "słodzić", ru: "солодить" },
+        { pl: "pieprzyć", ru: "перчить" },
+        { pl: "kroić", ru: "нарезать" },
+        { pl: "gotować", ru: "готовить" },
+        { pl: "gotować (w wodzie)", ru: "кипятить" },
+        { pl: "ugotować", ru: "сварить" },
+        { pl: "smażyć", ru: "жарить" },
+        { pl: "mieszać", ru: "мешать" },
+        { pl: "upiec", ru: "испечь" },
+
+        // Potrawy i wyrażenia
+        { pl: "herbata", ru: "чай" },
+        { pl: "woda", ru: "воду" },
+        { pl: "zupa", ru: "суп" },
+        { pl: "w garnku", ru: "в кастрюле" },
+        { pl: "jajko na twardo", ru: "яйцо вкрутую" },
+        { pl: "w piekarniku", ru: "в духовке" },
+        { pl: "mięso", ru: "мясо" },
+        { pl: "na patelni", ru: "на сковороде" },
+        { pl: "na małe kawałki", ru: "на маленькие кусочки" },
+        { pl: "sól", ru: "соль" },
+
+        // Posiłki
+        { pl: "śniadanie", ru: "завтрак" },
+        { pl: "drugie śniadanie", ru: "второй завтрак" },
+        { pl: "obiad", ru: "обед" },
+        { pl: "podwieczorek", ru: "полдник" },
+        { pl: "kolacja", ru: "ужин" },
+
+        // Dania
+        { pl: "naleśniki", ru: "блины" },
+        { pl: "sałatka warzywna", ru: "овощной салат" },
+        { pl: "sushi", ru: "суши" },
+        { pl: "barszcz", ru: "борщ" },
+        { pl: "kotlet schabowy", ru: "отбивная" },
+        { pl: "galaretka", ru: "желе" },
+        { pl: "pierogi", ru: "пельмени" },
+        { pl: "kapusta kiszona", ru: "квашеная капуста" },
+        { pl: "pilaw", ru: "плов" },
+        { pl: "szaszłyk", ru: "шашлык" },
+        { pl: "kapuśniak", ru: "щи" },
+        { pl: "jajecznica", ru: "яичница" },
+        { pl: "kotlet", ru: "котлета" },
+        { pl: "ryba", ru: "рыба" }
+    ],
     [Lesson.MARKED]: [],
 }
