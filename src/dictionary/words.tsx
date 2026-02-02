@@ -3749,5 +3749,27 @@ export const words: CategorizedWords = {
         { pl: "kotlet", ru: "котлета" },
         { pl: "ryba", ru: "рыба" }
     ],
+    [Lesson.IZ_PIERWYCH_UST_14]: [
+        { pl: "bez smaku", ru: "безвкусная" },
+        { pl: "szalona / wściekła", ru: "бешеная" },
+        { pl: "wegetariańska", ru: "вегетарианская" },
+        { pl: "smaczna", ru: "вкусная" },
+        { pl: "wysoka", ru: "высокая" },
+        { pl: "domowa", ru: "домашняя" },
+        { pl: "kaloryczna", ru: "калорийная" },
+        { pl: "nie na kieszeń / zbyt droga", ru: "не по карману" },
+        { pl: "nieprofesjonalne", ru: "непрофессиональное" },
+        { pl: "niska", ru: "низкая" },
+        { pl: "pierwszorzędne / znakomite", ru: "первоклассное" },
+        { pl: "przyjemna", ru: "приятная" },
+        { pl: "przystępna cenowo / dostępna", ru: "доступная" },
+        { pl: "spokojna", ru: "спокойная" },
+        { pl: "przyjazna", ru: "дружелюбная" },
+        { pl: "średnia", ru: "средняя" },
+        { pl: "egzotyczna", ru: "экзотическая" },
+        { pl: "okropna", ru: "ужасная" },
+        { pl: "okropne", ru: "ужасное" },
+        { pl: "wykwintna", ru: "изысканная" }
+    ],
     [Lesson.MARKED]: [],
 }
