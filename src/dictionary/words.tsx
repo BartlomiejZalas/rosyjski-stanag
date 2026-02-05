@@ -3771,5 +3771,22 @@ export const words: CategorizedWords = {
         { pl: "okropne", ru: "ужасное" },
         { pl: "wykwintna", ru: "изысканная" }
     ],
+    [Lesson.IZ_PIERWYCH_UST_HISTORIE]: [
+        { pl: "bak paliwa", ru: "бензобак" },
+        { pl: "w ciąży", ru: "беременна" },
+        { pl: "czasopism / magazynów", ru: "журналов" },
+        { pl: "pewnego razu", ru: "однажды" },
+        { pl: "zapukał", ru: "постучался" },
+        { pl: "wykrzyknęła", ru: "воскликнула" },
+        { pl: "przekąsić", ru: "перекусить" },
+        { pl: "przyzwyczaić się", ru: "привыкнуть" },
+        { pl: "wiersze", ru: "стихотворения" },
+        { pl: "wspomnienia", ru: "воспоминания" },
+        { pl: "starszy / w podeszłym wieku", ru: "пожилой" },
+        { pl: "pewny / przekonany", ru: "уверен" },
+        { pl: "gatunek / rodzaj", ru: "жанр" },
+        { pl: "zmarły", ru: "покойник" },
+        { pl: "warunkom", ru: "условиям" }
+    ],
     [Lesson.MARKED]: [],
 }
