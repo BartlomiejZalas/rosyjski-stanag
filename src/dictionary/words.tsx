@@ -3846,5 +3846,24 @@ export const words: CategorizedWords = {
         { pl: "lampka biurkowa", ru: "настольная лампа" },
         { pl: "zasłona", ru: "штора" }
     ],
+    [Lesson.IZ_PIERWYCH_UST_PRZYSZŁOŚĆ]: [
+        { pl: "jasna przyszłość", ru: "светлое будущее" },
+        { pl: "ludzkość", ru: "человечество" },
+        { pl: "krok", ru: "шаг" },
+        { pl: "nawet", ru: "даже" },
+        { pl: "niemal / prawie że", ru: "чуть ли не" },
+        { pl: "potrzeba", ru: "потребность" },
+        { pl: "nauka / uczenie się", ru: "обучение" },
+        { pl: "ilość", ru: "количество" },
+        { pl: "dlatego", ru: "поэтому" },
+        { pl: "szukać", ru: "искать" },
+
+        { pl: "[ja] szukam", ru: "ищу" },
+        { pl: "[ty] szukasz", ru: "ищешь" },
+        { pl: "[on/ona] szuka", ru: "ищет" },
+        { pl: "[my] szukamy", ru: "ищем" },
+        { pl: "[wy] szukacie", ru: "ищете" },
+        { pl: "[oni] szukają", ru: "ищут" }
+    ],
     [Lesson.MARKED]: [],
 }
